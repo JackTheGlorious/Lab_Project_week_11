@@ -1,0 +1,106 @@
+<!--
+    Repairs Page for The Moving Planner App
+    Created by Jonathan Golz
+    For use as a school project at SIU
+    Created 2/4/23
+    Updated 4/9/23
+-->
+<!DOCTYPE html>
+<html>
+<head>
+        <!--Title-->
+    <title>Repairs and Cleaning</title>
+    <!--Importing JS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Importing theme roller stylings-->
+    <link rel="stylesheet" href="themes/PlanningApplication.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+    <body>
+        <div data-role="page">
+            <!--Header-->
+            <div data-role="header"><h1>Cleaning and Repairs</h1>
+                <!--Navbar-->
+                <div data-role="navbar">
+                    <ul>
+                        <!--Ordered: Link/Browser fix/Transition/Prefetch-->
+                        <li><a href="instructions.html" rel="external" datatransition="slide" dataprefetch="true">Instructions</a></li>
+                        <li><a href="supplies.html" rel="external" datatransition="slide" dataprefetch="true">Supplies</a></li>
+                        <li><a href="companies.html" rel="external" datatransition="slide" dataprefetch="true">Movers</a></li>
+                    </ul><!--Seperation for 2 lines-->
+                    <ul>
+                        <li><a href="notifications.html" rel="external" datatransition="slide" dataprefetch="true">Notifications</a></li>
+                        <li><a href="utilities.html" rel="external" datatransition="slide" dataprefetch="true">Utilities</a></li>
+                        <li><a href="schedule.html" rel="external" datatransition="slide" dataprefetch="true">Schedule</a></li>
+                    </ul>
+                </div>
+                </div>
+        <div role="main" class="ui-content">
+        <p>
+            <!--Page Contents-->
+            <!--Short Description-->
+            Repairs and Cleaning recomended before moving out.
+            <br>
+            <!--Repairs List-->
+            <h3>Repairs</h3>
+            <p>
+            <strong>Drywall:</strong>
+            Filling or removing holes
+            </p>
+            <p>
+            <strong>Heating & Air:</strong>
+            Repairing or replacing central heating and air systems
+            </p>
+            <p>
+            <strong>Plumbing:</strong>
+            Fixing any leaks and replacing at risk pipes
+            </p>
+            <strong>Smoke Detectors:</strong>
+            Ensuring smoke detectors work and have fresh batteries
+            </p>
+        </p>
+        <!--Creates Right panel button-->
+        <a href="#rightPanel" data-role="button">Cleaning</a>
+        <!--Cleaning panel contents-->
+            <div data-role="panel" data-display="push" data-position="right" id="rightPanel">
+                <h3>Cleaning</h3> <!--Will make this a <li> eventually if possible (it was breaking it)-->
+                    <p>
+                    <strong>Carpet:</strong>
+                    Deep Clean carpets and remove any stains
+                    </p>
+                    <p>
+                    <strong>Paint:</strong>
+                    Replace broken or chipped paint
+                    </p>
+                    <p>
+                    <strong>Hard Floors:</strong>
+                    Mop floors and remove scuffs and scrattches if possible
+                    </p>
+                    <p>
+                    <strong>Windows:</strong>
+                    Ensure the window and blinds are clean and free of dust
+                    </p>
+                <p>
+                    <a data-role="button" data-rel="close">Close</a>
+                </p>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <h4>Copyright Jon &copy; 2023</h4>
+            <!--Footer navbar-->
+            <div data-role="navbar">
+                <ul>
+                    <!--Home link now including a data icon of a home-->
+                    <li><a href="index.html" data-icon="home" rel="external" datatransition="slide" dataprefetch="true">Home</a></li>
+                </ul>
+        </div>
+        </div>
+
+    </div>
+    </body>
+</html>

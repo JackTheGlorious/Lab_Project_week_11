@@ -1,0 +1,58 @@
+<!--
+    Display Page for The Moving Planner App
+    Created by Jonathan Golz
+    For use as a school project at SIU
+    Created 2/4/23
+    Updated 4/9/23
+-->
+<!DOCTYPE html>
+<html>
+<head>
+        <!--Title-->
+    <title>Display Items</title>
+    <!--Importing JS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Importing theme roller stylings-->
+    <link rel="stylesheet" href="themes/PlanningApplication.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+</head>
+    <body>
+        <!--Header-->
+        <div data-role="header"><h1>Display Items</h1>
+            <!--Navbar-->
+            <div data-role="navbar">
+                <ul>
+                    <!--Ordered: Link/Browser fix/Transition/Prefetch-->
+                    <li><a href="index.html" rel="external" datatransition="slide" dataprefetch="true">Home</a></li>
+                    <li><a href="planner.html" rel="external" datatransition="flow" dataprefetch="true">Planner</a></li>
+                    <li><a href="add.html" rel="external" dataprefetch="slide">Add Item</a></li>
+                </ul>
+        </div>
+        </div>
+
+        <div role="main" class="ui-content">
+        <p><!--Content-->
+            <!--display items-->
+            <ul id="itemsList" data-role="listview" data-inset="true"></ul>
+        </p>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <h4>Copyright Jon &copy; 2023</h4>
+            <!--Footer navbar-->
+            <div data-role="navbar">
+                <ul>
+                    <!--Home link now including a data icon of a home-->
+                    <li><a href="index.html" data-icon="home" rel="external" datatransition="slide" dataprefetch="true">Home</a></li>
+                </ul>
+        </div>
+        </div>
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!--
+    Schedule Page for The Moving Planner App
+    Created by Jonathan Golz
+    For use as a school project at SIU
+    Created 2/4/23
+    Updated 4/9/23
+-->
+<!DOCTYPE html>
+<html>
+<head>
+        <!--Title-->
+    <title>Schedule</title>
+    <!--Importing JS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Importing theme roller stylings-->
+    <link rel="stylesheet" href="themes/PlanningApplication.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+    <body>
+        <div data-role="page">
+            <!--Header-->
+            <div data-role="header"><h1>Schedule</h1>
+                <!--Navbar-->
+                <div data-role="navbar">
+                    <ul>
+                        <!--Ordered: Link/Browser fix/Transition/Prefetch-->
+                        <li><a href="instructions.html" rel="external" datatransition="slide" dataprefetch="true">Instructions</a></li>
+                        <li><a href="supplies.html" rel="external" datatransition="slide" dataprefetch="true">Supplies</a></li>
+                        <li><a href="companies.html" rel="external" datatransition="slide" dataprefetch="true">Movers</a></li>
+                    </ul><!--Seperation for 2 lines-->
+                    <ul>
+                        <li><a href="repairs.html" rel="external" datatransition="slide" dataprefetch="true">Cleaning/Repairs</a></li>
+                        <li><a href="notifications.html" rel="external" datatransition="slide" dataprefetch="true">Notifications</a></li>
+                        <li><a href="utilities.html" rel="external" datatransition="slide" dataprefetch="true">Utilities</a></li>
+                    </ul>
+                </div>
+                </div>
+
+        <div role="main" class="ui-content">
+        <p>
+            <!--Page Contents-->
+            <!--Description and instructions of neeeded items
+            This part was a little confusing and is largely subject to change-->
+            In order to build the schedule you should provide the following information as displayed in the example.
+            <ul>
+                Items Needed<!--Instructions list-->
+                <li>The To Do Item</li>
+                <li>A short description</li>
+                <li>The Order in which it should be done</li>
+                <li>If you will need help to complete the item</li>
+                <li>If completing that item is dependant on another item</li>
+                <li>If dependant, what item is it dependant on?</li>
+            </ul>
+            <!--Schedule table with column filtering-->
+            <table data-role="table" data-mode="columntoggle" class="ui-responsive">
+                <thead>
+                    <tr>
+                        <!--Column names-->
+                        <th>To do</th>
+                        <th data-priority="1">Desc</th>
+                        <th data-priority="2">Order</th>
+                        <th data-priority="3">Help Needed</th>
+                        <th data-priority="4">Dependant</th>
+                        <th data-priority="4">Dependant On</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>		
+                    <tr><!--Entries (manual)-->
+                        <th>Fix Drywall</th>
+                        <td>Apply putty to holes</td>
+                        <td>1</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>NA</td>
+                    </tr>		
+                    <tr>
+                        <th>Paint</th>
+                        <td>Paint over imperfections</td>
+                        <td>2</td>
+                        <td>N</td>
+                        <td>Y</td>
+                        <td>drywall fix</td>
+                    </tr>	
+                    <tr>
+                        <th>Clean Carpet</th>
+                        <td>Get carpet steamed</td>
+                        <td>3</td>
+                        <td>Y</td>
+                        <td>N</td>
+                        <td>NA</td>
+                    </tr>		
+                </tbody>
+            </table>
+        </p>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <h4>Copyright Jon &copy; 2023</h4>
+            <!--Footer navbar-->
+            <div data-role="navbar">
+                <ul>
+                    <!--Home link now including a data icon of a home-->
+                    <li><a href="index.html" data-icon="home" rel="external" datatransition="slide" dataprefetch="true">Home</a></li>
+                </ul>
+        </div>
+        </div>
+
+    </div>
+    </body>
+</html>
